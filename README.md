@@ -1,6 +1,6 @@
 # Your Project Name
 
-A brief description of your Vite.js project.
+A brief description of project.
 
 ## Project Setup
 
@@ -16,13 +16,13 @@ Make sure you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/ketan12025/dfcs.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-project
+    cd dfcs
     ```
 
 3. Install dependencies:
