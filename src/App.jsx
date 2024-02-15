@@ -4,6 +4,7 @@ import { getUsersApi } from "./adapters/user.adapter";
 import debounce from "./utils/debounce.util";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Loader from "./components/Loader";
 
 function App() {
   let [admins, setAdmins] = useState([]);
@@ -42,9 +43,7 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div className="loaderDiv">
-          <div className="loader"></div>
-        </div>
+        <Loader />
       ) : (
         <>
           <Header handleSearch={handleSearch} searchValue={searchValue} />
