@@ -1,0 +1,187 @@
+#root {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgb(106, 192, 227);
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+}
+
+.header-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px 20px;
+  width: 70%;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 30%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 5px;
+}
+
+.search-bar-input {
+  height: 36px;
+  border: none;
+  border-radius: 60px;
+  width: 80%;
+  padding-left: 2rem;
+}
+
+.search-bar-input:focus {
+  outline: none;
+}
+
+.hero {
+  width: 90%;
+  margin: auto;
+  /* justify-content: center; */
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(165, 160, 160);
+  margin: 25px 0px;
+}
+
+.admin-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  column-gap: 2rem;
+  box-sizing: border-box;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 20px 0px 10px 0px;
+  padding: 10px;
+  transition: transform 0.3s;
+  width: 21%;
+  overflow: hidden;
+}
+
+.info-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 5px 10px;
+}
+
+.email {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 5px 10px;
+  color: rgb(165, 160, 160);
+}
+
+hr {
+  margin: 3rem 0rem;
+  border: 1px solid rgb(130, 229, 231);
+}
+
+.loaderDiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: auto;
+  border-top: 5px solid black;
+  animation: loading 2s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(106, 192, 227);
+}
+
+@media (max-width: 1200px) {
+  .info-card {
+    width: 28%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    width: 27%;
+  }
+}
+
+@media (max-width: 820px) {
+  .info-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-card {
+    width: 100%;
+  }
+}
+
+.add-item-button {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 3rem;
+  font-weight: 400;
+  height: 4rem;
+  width: 4rem;
+  line-height: 1;
+  background-color: rgb(106, 192, 227);
+  border-radius: 50%;
+}
